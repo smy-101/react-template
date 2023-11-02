@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "target": "ES2022",  /* 面向的 JavaScript 版本 */
+    "esModuleInterop": true, /* 帮助修补 CommonJS 和 ES 模块之间的一些障碍 */
+    "skipLibCheck": true, /* 跳过检查 .d.ts 文件类型 这对性能很重要 */
+    "verbatimModuleSyntax": true, /* 为 和 文件中的 import .cts 和 .mts export 语法提供严格的错误检查 */
+    "allowJs": true, /* 允许编译 JavaScript 文件 */
+    "resolveJsonModule": true, /* 允许导入 JSON 模块 */
+    "moduleDetection": "force", /* 强制 TypeScript 将所有文件视为module */
+
+    /* Strictness */
+    "strict": true, /* 启用所有严格类型检查选项 */
+    "noUncheckedIndexedAccess": true, /* 阻止在未定义数组或对象的情况下访问该数组或对象 */
+
+    /* If NOT transpiling with TypeScript: */
+    "moduleResolution": "bundler", /* 告诉 TypeScript 如何解析模块 使用typescript进行转译时使用NodeNext */
+    "module": "ESNext", /* 告诉 TypeScript 要使用的模块语法 使用typescript进行转译时使用NodeNext */
+    "noEmit": true, /* 不要输出任何内容 outDir —— 用于typescript编译JavaScript文件位置 */
+
+    /* If your code runs in the DOM: */
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+
+    /* If your code doesn't run in the DOM: */
+    // "lib": ["ES2023"],
+
+    /* If you're building for a library: */
+    /* 生成 .d.ts 类型声明文件 */
+    /* "declaration": true */
+
+    /* If you're building for a library in a monorepo: */
+    /*启用项目引用。项目引用可以让 TypeScript 项目更好地组织代码 */
+    /* "composite": true */
+
+    /* sourceMap */
+    "declarationMap": true, /* 为 .d.ts 文件生成源映射 */
+    "sourceMap": true, /* 为 .js 文件生成源映射 */
+
+    /* react-jsx */
+    "jsx": "react-jsx",
+
+    /* lint */
+    "noUnusedParameters": true, /* 禁止未使用的参数 */
+    "noUnusedLocals": true, /* 禁止未使用的局部变量 */
+    "noFallthroughCasesInSwitch": true, /* 禁止在 switch 语句中的 case 子句中落空 */
+    "useDefineForClassFields": true, /* 使用 Object.defineProperty 来初始化类字段 */
+    "allowImportingTsExtensions": true, /* 允许从没有设置 --allowJs 的 .ts 文件中导入 */
+    "isolatedModules": true, /* 将每个文件视为单独的模块 */
+    "forceConsistentCasingInFileNames": true, /* 强制大小写来区分文件名 */
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }] /* 允许用户为项目的不同部分使用不同的 TypeScript 配置 */
+}
