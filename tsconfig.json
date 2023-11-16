@@ -27,13 +27,14 @@
     /* If you're building for a library: */
     /* 生成 .d.ts 类型声明文件 */
     /* "declaration": true */
+    /* 为 .d.ts 文件生成源映射 */
+    /* "declarationMap": true */
 
     /* If you're building for a library in a monorepo: */
     /*启用项目引用。项目引用可以让 TypeScript 项目更好地组织代码 */
     /* "composite": true */
 
     /* sourceMap */
-    "declarationMap": true, /* 为 .d.ts 文件生成源映射 */
     "sourceMap": true, /* 为 .js 文件生成源映射 */
 
     /* react-jsx */
