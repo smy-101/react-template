@@ -48,11 +48,12 @@
     "allowImportingTsExtensions": true, /* 允许从没有设置 --allowJs 的 .ts 文件中导入 */
     "isolatedModules": true, /* 将每个文件视为单独的模块 */
     "forceConsistentCasingInFileNames": true, /* 强制大小写来区分文件名 */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }], /* 允许用户为项目的不同部分使用不同的 TypeScript 配置 */
-  "baseUrl": ".",
-  "paths": {
-    "@/*": ["src/*"]
-  }
+
 }
