@@ -6,5 +6,8 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.config.ts"] /* 专门用于 vite.config.ts 这一文件的 TypeScript 配置文件 */
+  "include": [
+    "vite.config.ts",
+    "src/vite-env.d.ts",
+  ] /* 专门用于 vite.config.ts 这一文件的 TypeScript 配置文件 */
 }

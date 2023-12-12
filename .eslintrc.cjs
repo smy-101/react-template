@@ -20,6 +20,8 @@ module.exports = {
   rules: {
     "react/react-in-jsx-scope": "off",
     "react/jsx-no-target-blank": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-explicit-any": 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
